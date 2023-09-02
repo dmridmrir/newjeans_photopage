@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, inittial-scale =1.0">
     <title>Newjeans Photos</title>
-     <style>
+    <style>
         html,
         body {
             margin: 0;
@@ -43,14 +42,14 @@
             font-family: 'Bagel Fat One', cursive;
             font-size: x-large;
         }
-        
     </style>
     <script>
         function GoToMain() {
             location.href = "newjeansphotos.html"
         }
+
     </script>
-    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
@@ -58,42 +57,72 @@
 
 <body>
     <header class="header">
-        <div class="door">
+        <div class="door" style="cursor: pointer;">
             <img src="newjeans/토끼.jpg" height="126" width="126">
             <img src="newjeans/뉴진스로고.jpg">
         </div>
     </header>
     <section class="section">
-        <img src="newjeans/멤버 메인 사진/민지.jpg" alt="이미지" class="popup-image" width="200" height="300">
-        <div class="popup-overlay">
-          <div class="popup-content">
-            <span class="close-button">&times;</span>
-            <img src="newjeans/멤버 메인 사진/민지.jpg" alt="이미지" class="popup-image">
-          </div>
+        <div class="person" style="position: absolute; top: 50%; left: 10%; transform: translate(-50%,-50%);">
+            <img src="newjeans/멤버 메인 사진/민지.jpg" alt="이미지" class="popup-image1" width="200" height="300"
+                style="cursor: pointer;">
+            <p>민지 ♪</p>
         </div>
-      
-
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <img src="newjeans/멤버 메인 사진/민지.jpg" alt="이미지" class="popup-image1">
+            </div>
+        </div>
 
         <div class="person" style="position: absolute; top: 50%; left: 30%; transform: translate(-50%,-50%);">
-            <img src="newjeans/멤버 메인 사진/하니.jpg" width="200" height="300">
+            <img src="newjeans/멤버 메인 사진/하니.jpg" alt="이미지" class="popup-image2" width="200" height="300"
+                style="cursor: pointer;">
             <p>하니 ♪</p>
+        </div>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <img src="newjeans/멤버 메인 사진/하니.jpg" alt="이미지" class="popup-image2">
+            </div>
         </div>
 
         <div class="person" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-            <img src="newjeans/멤버 메인 사진/다니엘.jpg" width="200" height="300">
+            <img src="newjeans/멤버 메인 사진/다니엘.jpg" alt="이미지" class="popup-image3" width="200" height="300"
+                style="cursor: pointer;">
             <p>다니엘 ♪</p>
+        </div>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <img src="newjeans/멤버 메인 사진/다니엘.jpg" alt="이미지" class="popup-image3">
+            </div>
         </div>
 
         <div class="person" style="position: absolute; top: 50%; left: 70%; transform: translate(-50%,-50%);">
-            <img src="newjeans/멤버 메인 사진/해린.jpg" width="200" height="300">
+            <img src="newjeans/멤버 메인 사진/해린.jpg" alt="이미지" class="popup-image4" width="200" height="300"
+                style="cursor: pointer;">
             <p>해린 ♪</p>
+        </div>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <img src="newjeans/멤버 메인 사진/해린.jpg" alt="이미지" class="popup-image4">
+            </div>
         </div>
 
         <div class="person" style="position: absolute; top: 50%; left: 90%; transform: translate(-50%,-50%);">
-            <img src="newjeans/멤버 메인 사진/혜인.jpg" width="200" height="300">
+            <img src="newjeans/멤버 메인 사진/혜인.jpg" alt="이미지" class="popup-image5" width="200" height="300"
+                style="cursor: pointer;">
             <p>혜인 ♪</p>
         </div>
-    </section>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <img src="newjeans/멤버 메인 사진/혜인.jpg" alt="이미지" class="popup-image5">
+            </div>
+        </div>
+        </section>
     <hr>
     <div style="font-size: 30px; position: absolute; top: 96%; left: 25%; transform: translate(-50%,-50%);">
         <a href="https://www.instagram.com/newjeans_official/" target="_blank"><img src="newjeans/instagram.jpg"
@@ -107,7 +136,7 @@
         <a href="https://twitter.com/NewJeans_twt" target="_blank"><img src="newjeans/twitter.png" width="30"
                 height="30"> NewJeans</a>
     </div>
-
+    <script src="popup.js"></script>
 </body>
 
 </html>
