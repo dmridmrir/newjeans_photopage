@@ -48,37 +48,33 @@
             <strong>민지 게시판</strong>
             <p>민지 사진이 게시됩니다</p>
         </div>
-        <div class="board_view_wrap">
-            <div class="board_view">
+        <div class="board_write_wrap">
+            <div class="board_write">
                 <div class="title">
-                    민지사진
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" placeholder="제목 입력" value="글 제목"></dd>
+                    </dl>
                 </div>
                 <div class="info">
                     <dl>
-                        <dt>번호</dt>
-                        <dd>1</dd>
+                        <dt>글쓴이</dt>
+                        <dd><input type="text" placeholder="닉네임 입력" value="닉네임"></dd>
                     </dl>
                     <dl>
-                        <dt>작성자</dt>
-                        <dd>작성자</dd>
-                    </dl>
-                    <dl>
-                        <dt>작성일</dt>
-                        <dd>2023.09.09</dd>
-                    </dl>
-                    <dl>
-                        <dt>조회수</dt>
-                        <dd>1</dd>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" placeholder="비밀번호 입력" value="1234"></dd>
                     </dl>
                 </div>
-
                 <div class="cont">
-                    민지 사진
+                    <textarea placeholder="내용 입력" >
+                        글 내용
+                    </textarea>
                 </div>
             </div>
             <div class="bt_wrap">
-                <a href="minji.html" class="on">목록</a>
-                <a href="edit.html">수정</a>
+                <a href="viewminji.html" class="on">수정</a>
+                <a href="viewminji.html">취소</a>
             </div>
         </div>
     </div>
